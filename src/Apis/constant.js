@@ -1,0 +1,16 @@
+export const ApiEndPoints = {
+  login: "login",
+  categories: "category",
+  dashboard: "dashboard",
+  appInfo: "app-information",
+  updateStatus: "update-status",
+  categoryOnTop: "category-on-top",
+  getSignature: "get-signature",
+  watchFaces: "watch-faces",
+  updateWatchFacesStatus: "watch-faces-update-status",
+  forgotPassword: "forgot-password",
+  category: "categories",
+  subCategories: "subCategories",
+  coupons: "coupons",
+  tags: "tags",
+};
