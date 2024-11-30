@@ -54,6 +54,12 @@ const data = [
     to: "/push",
   },
   {
+    id: "Push",
+    icon: "simple-icon-settings",
+    label: "App Settings",
+    to: "/app-settings",
+  },
+  {
     id: "appInfo",
     icon: "simple-icon-screen-desktop",
     label: "App Information",
