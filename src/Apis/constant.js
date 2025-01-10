@@ -1,6 +1,7 @@
 export const ApiEndPoints = {
   login: "login",
   categories: "category",
+  users: "users",
   dashboard: "dashboard",
   appInfo: "app-information",
   updateStatus: "update-status",
@@ -13,4 +14,5 @@ export const ApiEndPoints = {
   subCategories: "subCategories",
   coupons: "coupons",
   tags: "tags",
+  reportUsers: "reportUsers",
 };

@@ -54,10 +54,16 @@ const data = [
     to: "/push",
   },
   {
-    id: "Push",
+    id: "app-setting",
     icon: "simple-icon-settings",
     label: "App Settings",
     to: "/app-settings",
+  },
+  {
+    id: "report-user",
+    icon: "simple-icon-settings",
+    label: "Reported Users",
+    to: "/report-users",
   },
   {
     id: "appInfo",

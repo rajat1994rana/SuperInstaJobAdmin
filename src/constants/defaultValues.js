@@ -28,7 +28,7 @@ export const servicePath = "https://api.coloredstrategies.com";
 export const apiUrl = () => {
   const { location } = window;
   if (location.hostname === "localhost") {
-    return `http://localhost:4000/api/admin/v1`;
+    return `https://app.superinstajobs.com/api/admin/v1`;
   }
   return `${location.origin}/api/admin/v1`;
 };

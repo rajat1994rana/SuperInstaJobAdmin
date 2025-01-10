@@ -8299,3 +8299,139 @@ i.large-icon {
   cursor: pointer;
   border-radius: 20px;
 }
+.slack-ui {
+  display: flex;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* Sidebar */
+.workspace-sidebar {
+  background-color: #2d2f33;
+  color: #ffffff;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.workspace-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #444;
+}
+
+.add-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.channel-list,
+.dm-list {
+  margin-top: 20px;
+}
+
+.channel-item,
+.contact-item {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.channel-item:hover,
+.contact-item:hover {
+  background-color: #444;
+}
+
+.channel-item.active {
+  background-color: #007bff;
+}
+
+/* Chat Area */
+.chat-area {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #ffffff;
+}
+
+.chat-header {
+  background-color: #f1f3f4;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-bar input {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.chat-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.message {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f3f4f6;
+}
+
+.message.self {
+  background-color: #e1f5fe;
+  text-align: right;
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.message-user {
+  font-weight: bold;
+}
+
+.chat-footer {
+  background-color: #f1f3f4;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ddd;
+}
+
+.chat-footer input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #555;
+  cursor: pointer;
+}
+
+.send-btn {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.send-btn:hover {
+  background-color: #0056b3;
+}

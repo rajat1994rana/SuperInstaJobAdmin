@@ -17,6 +17,12 @@ export const getCategory = ({ page, limit, search }) =>
 export const getCoupons = ({ page, limit, search }) =>
   axios.get("/coupons", { params: { page, limit, search } });
 
+export const getReportUsers = ({ page, limit, search }) =>
+  axios.get("/report-users", { page, limit, search });
+
+export const getReportUsersDetails = ({ page, limit, userId }) =>
+  axios.get(`/report-users/${userId}`, { page, limit });
+
 export const getAllTags = (params) => axios.get("/tags", { params });
 export const addNewTag = (data) => axios.post("/tags", data);
 export const updateTag = (data) => axios.put("/tags", data);
@@ -30,6 +36,15 @@ export const addNewCoupon = (data) => {
   form.append("image", data.image);
   form.append("status", 1);
   return axios.post("/coupons", form);
+};
+
+export const blackListClient = (data) => {
+  const form = new FormData();
+  form.append("reportUserId", data.userId);
+  form.append("reasonType", data.reasonType);
+  form.append("description", data.description);
+  form.append("image", data.image);
+  return axios.post("/black-list", form);
 };
 
 export const updateCoupon = (data) => {

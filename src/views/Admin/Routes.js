@@ -95,6 +95,17 @@ const EditTag = React.lazy(() =>
   import(/* webpackChunkName: "edit-tag" */ "./Tags/EditTags")
 );
 
+const Chat = React.lazy(() => import(/* webpackChunkName: "chat" */ "./Chat"));
+const ReportUser = React.lazy(() =>
+  import(/* webpackChunkName: "report-users" */ "./ReportUser")
+);
+
+const ReportDetails = React.lazy(() =>
+  import(
+    /* webpackChunkName: "report-details-users" */ "./ReportUser/ReportDetails"
+  )
+);
+
 class App extends Component {
   render() {
     return (
@@ -138,6 +149,12 @@ class App extends Component {
               <Route path='/tags' component={Tags} />
               <Route path='/edit-tag' component={EditTag} />
               <Route path='/add-tag' component={AddTag} />
+              <Route path='/chat' component={Chat} />
+              <Route path='/report-users' component={ReportUser} />
+              <Route
+                path='/report-user-details/:userId'
+                component={ReportDetails}
+              />
 
               <Route path='/bookings/:status?' component={Bookings} />
 
