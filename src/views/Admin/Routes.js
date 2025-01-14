@@ -106,6 +106,10 @@ const ReportDetails = React.lazy(() =>
   )
 );
 
+const JobDisputes = React.lazy(() =>
+  import(/* webpackChunkName: "job-disputes" */ "./Dispute")
+);
+
 class App extends Component {
   render() {
     return (
@@ -151,6 +155,7 @@ class App extends Component {
               <Route path='/add-tag' component={AddTag} />
               <Route path='/chat' component={Chat} />
               <Route path='/report-users' component={ReportUser} />
+              <Route path='/job-dispute' component={JobDisputes} />
               <Route
                 path='/report-user-details/:userId'
                 component={ReportDetails}

@@ -1,5 +1,6 @@
 import axios from "utils/handleAxios";
 export const getLastChatList = () => {
+  //props.match?.params?.status
   return axios.get("/last-chat");
 };
 export const getAllMessage = (id) => {

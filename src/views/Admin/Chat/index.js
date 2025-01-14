@@ -9,7 +9,7 @@ import { Container } from "./styles";
 
 const userInfo = checkAuth();
 
-const ChatScreen = () => {
+const ChatScreen = ({ location }) => {
   const chatRef = useRef(null);
   const inputRef = useRef(null);
   const socketRef = useRef(null);
@@ -62,6 +62,9 @@ const ChatScreen = () => {
           setAllLastChat(data?.data?.data);
           if (data?.data?.data.length && loading) {
             let thread = data?.data?.data[0];
+            if (location.state?.dispute) {
+              thread = location.state?.dispute;
+            }
             setSelectedChat(thread);
             findAllMessage(thread.id);
             setFriendName(thread?.name);

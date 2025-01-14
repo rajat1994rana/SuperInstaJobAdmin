@@ -36,6 +36,12 @@ const data = [
     to: "/chat",
   },
   {
+    id: "dispute",
+    icon: "iconsminds-coins",
+    label: "Job Disputes",
+    to: "/job-dispute",
+  },
+  {
     id: "coupon",
     icon: "iconsminds-dollar",
     label: "Coupon",
@@ -61,7 +67,7 @@ const data = [
   },
   {
     id: "report-user",
-    icon: "simple-icon-settings",
+    icon: "iconsminds-network",
     label: "Reported Users",
     to: "/report-users",
   },

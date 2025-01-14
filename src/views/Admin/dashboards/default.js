@@ -106,12 +106,21 @@ const DefaultDashboard = React.memo(() => {
                 />
               </Link>
             </Colxx>
-            <Colxx lg='4' xl='4' className='mb-4'></Colxx>
+            <Colxx lg='2' xl='2' className='mb-4'></Colxx>
             <Colxx lg='4' xl='4' className='mb-4'>
-              <Link to='/bookings/3'>
+              <Link to='/report-users'>
                 <GradientWithRadialProgressCard
-                  icon='iconsminds-billing'
-                  title={`$${dashBoardData.blackListUser} Blocked Users`}
+                  icon='iconsminds-network'
+                  title={`${dashBoardData.blackListUser} Blocked Users`}
+                  detail=''
+                />
+              </Link>
+            </Colxx>
+            <Colxx lg='4' xl='4' className='mb-4'>
+              <Link to='/job-dispute'>
+                <GradientWithRadialProgressCard
+                  icon='iconsminds-coins'
+                  title={`${dashBoardData.totalDisputes} Job Disputes`}
                   detail=''
                 />
               </Link>
